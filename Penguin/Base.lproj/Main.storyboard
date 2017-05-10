@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F2109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u66-Ci-7Kt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="au9-0F-4yX">
+            <objects>
+                <viewController id="u66-Ci-7Kt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sGj-OC-gVi"/>
+                        <viewControllerLayoutGuide type="bottom" id="OzW-hy-1rf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4A3-XJ-oWc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpH-Nt-lRb">
+                                <rect key="frame" x="20" y="28" width="280" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="スタート画面.png" translatesAutoresizingMaskIntoConstraints="NO" id="rSG-Mu-StC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="573"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vil-95-KJf">
+                                <rect key="frame" x="158" y="208" width="142" height="91"/>
+                                <connections>
+                                    <segue destination="zMZ-Vs-n9O" kind="show" id="emA-rN-7cv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBP-Mg-ORb">
+                                <rect key="frame" x="158" y="457" width="142" height="91"/>
+                                <connections>
+                                    <segue destination="X2b-9t-DRn" kind="show" id="EAv-x3-yac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViO-xz-ouB">
+                                <rect key="frame" x="158" y="349" width="142" height="91"/>
+                                <connections>
+                                    <segue destination="ylh-Y0-knW" kind="show" id="wNj-V8-7gu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8h2-SI-gCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="-431"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="w3t-bN-OeT">
+            <objects>
+                <viewController id="ylh-Y0-knW" customClass="SecondViewController" customModule="Penguin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="90U-tw-I27"/>
+                        <viewControllerLayoutGuide type="bottom" id="bwt-d0-szb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mgd-3J-cUx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fi-Xs-r4x">
+                                <rect key="frame" x="110" y="13" width="165" height="47.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbG-Rg-2fH">
+                                <rect key="frame" x="13" y="5" width="89" height="66"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZj-o6-avz">
+                                <rect key="frame" x="12" y="79" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="MnO-YT-ge8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtl-6R-WNi">
+                                <rect key="frame" x="12" y="235" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="X8c-oh-qT3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pca-49-4np">
+                                <rect key="frame" x="12" y="287" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="tph-1Y-M1v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5d-z5-gab">
+                                <rect key="frame" x="12" y="339" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="ial-XD-fLt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc6-aL-MSQ">
+                                <rect key="frame" x="12" y="391" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="58W-bu-bBo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dON-DC-XmT">
+                                <rect key="frame" x="92" y="391" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="voB-E9-Ujk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pad-m4-cOc">
+                                <rect key="frame" x="165" y="391" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="jPh-2e-guh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-Rw-8x6">
+                                <rect key="frame" x="235" y="391" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="f4H-LC-KZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdi-3S-tKa">
+                                <rect key="frame" x="92" y="339" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="hO7-CR-c4s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C0-EE-ySC">
+                                <rect key="frame" x="165" y="339" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="42q-bj-lyY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smn-ga-BRF">
+                                <rect key="frame" x="235" y="339" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="NI1-x3-zf0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plf-ms-Pjl">
+                                <rect key="frame" x="92" y="287" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="rJ5-gD-wz2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY7-2T-602">
+                                <rect key="frame" x="165" y="287" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="dK1-QS-qrN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb4-Yv-Mec">
+                                <rect key="frame" x="235" y="287" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="S5D-k0-gtq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UA-TD-7Iy">
+                                <rect key="frame" x="92" y="235" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="wVo-Ry-PDm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85K-Nb-pqK">
+                                <rect key="frame" x="165" y="235" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="b5S-BZ-KVO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxr-st-Jsy">
+                                <rect key="frame" x="235" y="235" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="sXt-NK-1yk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irb-xg-gOb">
+                                <rect key="frame" x="213243" y="148" width="91" height="62"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEo-iq-zQZ">
+                                <rect key="frame" x="235" y="79" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="WKl-Eh-5JN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEk-5f-zdk">
+                                <rect key="frame" x="12" y="131" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="9PX-3t-Rrq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wN6-LI-mJz">
+                                <rect key="frame" x="92" y="131" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="H0v-7J-J2k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-E9-wXy">
+                                <rect key="frame" x="165" y="131" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="9Tx-Gh-TQs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWD-Au-b9u">
+                                <rect key="frame" x="235" y="131" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="jMR-2r-FUL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID4-av-Vdo">
+                                <rect key="frame" x="12" y="183" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="Lu8-Z0-BdI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-bY-j8m">
+                                <rect key="frame" x="165" y="79" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="HCQ-iA-Nye"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dss-kG-yEa">
+                                <rect key="frame" x="249" y="527" width="71" height="40.5"/>
+                                <state key="normal" title="リセット"/>
+                                <connections>
+                                    <action selector="back" destination="ylh-Y0-knW" eventType="touchUpInside" id="41Z-OH-643"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7p-la-CWz">
+                                <rect key="frame" x="203" y="13" width="72" height="47.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9j-7G-hsF">
+                                <rect key="frame" x="92" y="183" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="acH-ng-hl1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nw-TP-hLf">
+                                <rect key="frame" x="165" y="183" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="ah9-Bg-mZb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6t-fQ-pTt">
+                                <rect key="frame" x="235" y="183" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="TMt-5G-wcX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4T-DG-m8o">
+                                <rect key="frame" x="92" y="79" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="ylh-Y0-knW" eventType="touchUpInside" id="7Dn-c6-I3I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jK-wp-WWD">
+                                <rect key="frame" x="122" y="463" width="76" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="スタート"/>
+                                <connections>
+                                    <action selector="startbutton" destination="ylh-Y0-knW" eventType="touchUpInside" id="60b-hH-lXO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="countdownlabel" destination="FbG-Rg-2fH" id="Qw7-jj-V4I"/>
+                        <outlet property="kaisuulabel" destination="8fi-Xs-r4x" id="GpB-1R-R54"/>
+                        <outletCollection property="fishButtons" destination="cZj-o6-avz" collectionClass="NSMutableArray" id="C25-lm-840"/>
+                        <outletCollection property="fishButtons" destination="j4T-DG-m8o" collectionClass="NSMutableArray" id="Cz0-4e-ZJJ"/>
+                        <outletCollection property="fishButtons" destination="mV0-bY-j8m" collectionClass="NSMutableArray" id="o4h-Jw-ze2"/>
+                        <outletCollection property="fishButtons" destination="NEo-iq-zQZ" collectionClass="NSMutableArray" id="Qhl-Z0-xrK"/>
+                        <outletCollection property="fishButtons" destination="PEk-5f-zdk" collectionClass="NSMutableArray" id="fbz-DN-0YK"/>
+                        <outletCollection property="fishButtons" destination="wN6-LI-mJz" collectionClass="NSMutableArray" id="GBF-De-3Uc"/>
+                        <outletCollection property="fishButtons" destination="nQv-E9-wXy" collectionClass="NSMutableArray" id="z8z-lE-5TD"/>
+                        <outletCollection property="fishButtons" destination="tWD-Au-b9u" collectionClass="NSMutableArray" id="kS6-nl-Ev1"/>
+                        <outletCollection property="fishButtons" destination="ID4-av-Vdo" collectionClass="NSMutableArray" id="6TY-k7-8nG"/>
+                        <outletCollection property="fishButtons" destination="a9j-7G-hsF" collectionClass="NSMutableArray" id="N2w-bH-sj1"/>
+                        <outletCollection property="fishButtons" destination="1nw-TP-hLf" collectionClass="NSMutableArray" id="2tO-BY-1JJ"/>
+                        <outletCollection property="fishButtons" destination="g6t-fQ-pTt" collectionClass="NSMutableArray" id="YbM-2g-MEv"/>
+                        <outletCollection property="fishButtons" destination="Qtl-6R-WNi" collectionClass="NSMutableArray" id="a7F-1M-dfh"/>
+                        <outletCollection property="fishButtons" destination="5UA-TD-7Iy" collectionClass="NSMutableArray" id="v32-wL-XXi"/>
+                        <outletCollection property="fishButtons" destination="85K-Nb-pqK" collectionClass="NSMutableArray" id="WJE-Kh-w4d"/>
+                        <outletCollection property="fishButtons" destination="xxr-st-Jsy" collectionClass="NSMutableArray" id="jx9-wX-efN"/>
+                        <outletCollection property="fishButtons" destination="Pca-49-4np" collectionClass="NSMutableArray" id="DcR-Hh-CN2"/>
+                        <outletCollection property="fishButtons" destination="plf-ms-Pjl" collectionClass="NSMutableArray" id="ynu-2k-Tq2"/>
+                        <outletCollection property="fishButtons" destination="TY7-2T-602" collectionClass="NSMutableArray" id="Rd1-1E-tyL"/>
+                        <outletCollection property="fishButtons" destination="Jb4-Yv-Mec" collectionClass="NSMutableArray" id="YmO-qL-KJD"/>
+                        <outletCollection property="fishButtons" destination="i5d-z5-gab" collectionClass="NSMutableArray" id="Ekc-D8-9Og"/>
+                        <outletCollection property="fishButtons" destination="Rdi-3S-tKa" collectionClass="NSMutableArray" id="M8m-EQ-E6e"/>
+                        <outletCollection property="fishButtons" destination="3C0-EE-ySC" collectionClass="NSMutableArray" id="8gs-kc-X8S"/>
+                        <outletCollection property="fishButtons" destination="smn-ga-BRF" collectionClass="NSMutableArray" id="ZhG-lq-M1s"/>
+                        <outletCollection property="fishButtons" destination="uc6-aL-MSQ" collectionClass="NSMutableArray" id="YWa-rV-1bX"/>
+                        <outletCollection property="fishButtons" destination="dON-DC-XmT" collectionClass="NSMutableArray" id="tt5-7p-7a4"/>
+                        <outletCollection property="fishButtons" destination="pad-m4-cOc" collectionClass="NSMutableArray" id="3q2-Nn-vpE"/>
+                        <outletCollection property="fishButtons" destination="yW7-Rw-8x6" collectionClass="NSMutableArray" id="gvc-IT-5vb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcQ-qK-HEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="261"/>
+        </scene>
+        <!--Penguin View Controller-->
+        <scene sceneID="igI-d4-LqV">
+            <objects>
+                <viewController id="zMZ-Vs-n9O" customClass="PenguinViewController" customModule="Penguin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bwx-qG-puH"/>
+                        <viewControllerLayoutGuide type="bottom" id="1ch-S7-FIt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="302-fT-4PI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="神画面.png" translatesAutoresizingMaskIntoConstraints="NO" id="Snp-kW-E3O">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="in6-30-sYk">
+                                <rect key="frame" x="248" y="528" width="71" height="40"/>
+                                <state key="normal" title="リセット"/>
+                                <connections>
+                                    <action selector="back" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="ZMu-YY-rOv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ey0-OZ-iP1">
+                                <rect key="frame" x="110" y="13" width="165" height="47.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNn-ch-tib">
+                                <rect key="frame" x="203" y="13" width="72" height="47.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dl-wD-brb">
+                                <rect key="frame" x="115" y="79" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="qmP-7c-zlb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6t-gM-hoc">
+                                <rect key="frame" x="209" y="79" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="QCJ-4s-kRL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tN2-fA-d0p">
+                                <rect key="frame" x="209" y="149" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="b6R-fA-BG4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wk-N8-wbf">
+                                <rect key="frame" x="209" y="219" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="rXr-uE-K2Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htr-vC-Bas">
+                                <rect key="frame" x="115" y="149" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="EAO-jW-3YS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GF4-9i-h7j">
+                                <rect key="frame" x="115" y="219" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="llv-x3-eXw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnD-bB-6dB">
+                                <rect key="frame" x="11" y="149" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="JNc-9g-1ZR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgl-Zs-yEJ">
+                                <rect key="frame" x="11" y="219" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="aYB-Dh-Cnx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLG-tT-5VF">
+                                <rect key="frame" x="11" y="289" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="Md6-Sq-bwO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQr-rb-7ot">
+                                <rect key="frame" x="11" y="359" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="zon-a3-rry"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb6-WZ-QOB">
+                                <rect key="frame" x="115" y="359" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="kbR-t5-1Q5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ky-Eo-Ytq">
+                                <rect key="frame" x="209" y="359" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="8ue-Py-idR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eq-on-E3E">
+                                <rect key="frame" x="115" y="289" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="Xfg-IG-UdG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD0-UH-tWk">
+                                <rect key="frame" x="209" y="289" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="TnE-OJ-iHO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmT-6a-4XN">
+                                <rect key="frame" x="122" y="465" width="76" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="スタート"/>
+                                <connections>
+                                    <action selector="startbutton" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="SkE-b7-eMC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t59-7c-D2p">
+                                <rect key="frame" x="13" y="5" width="89" height="66"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEu-mj-teX">
+                                <rect key="frame" x="11" y="79" width="91" height="62"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="zMZ-Vs-n9O" eventType="touchUpInside" id="ZhG-Cy-Ip9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="countdownlabel" destination="t59-7c-D2p" id="7KY-Dk-qve"/>
+                        <outlet property="kaisuulabel" destination="Ey0-OZ-iP1" id="dMj-Q6-mu8"/>
+                        <outletCollection property="fishButtons" destination="mEu-mj-teX" collectionClass="NSMutableArray" id="q6c-3M-BhB"/>
+                        <outletCollection property="fishButtons" destination="1dl-wD-brb" collectionClass="NSMutableArray" id="cjY-K9-uaS"/>
+                        <outletCollection property="fishButtons" destination="g6t-gM-hoc" collectionClass="NSMutableArray" id="FPV-Nx-eOB"/>
+                        <outletCollection property="fishButtons" destination="TnD-bB-6dB" collectionClass="NSMutableArray" id="p88-aP-HM2"/>
+                        <outletCollection property="fishButtons" destination="htr-vC-Bas" collectionClass="NSMutableArray" id="VHq-Id-g8I"/>
+                        <outletCollection property="fishButtons" destination="tN2-fA-d0p" collectionClass="NSMutableArray" id="la3-2k-Ido"/>
+                        <outletCollection property="fishButtons" destination="hgl-Zs-yEJ" collectionClass="NSMutableArray" id="1Cu-iX-wyf"/>
+                        <outletCollection property="fishButtons" destination="GF4-9i-h7j" collectionClass="NSMutableArray" id="LTZ-Hj-JxU"/>
+                        <outletCollection property="fishButtons" destination="0Wk-N8-wbf" collectionClass="NSMutableArray" id="fbl-yD-OBx"/>
+                        <outletCollection property="fishButtons" destination="jLG-tT-5VF" collectionClass="NSMutableArray" id="iOR-p4-AL9"/>
+                        <outletCollection property="fishButtons" destination="2eq-on-E3E" collectionClass="NSMutableArray" id="PbW-O9-FBi"/>
+                        <outletCollection property="fishButtons" destination="SD0-UH-tWk" collectionClass="NSMutableArray" id="Nyc-Nb-5I0"/>
+                        <outletCollection property="fishButtons" destination="gQr-rb-7ot" collectionClass="NSMutableArray" id="tcI-zv-xwe"/>
+                        <outletCollection property="fishButtons" destination="Gb6-WZ-QOB" collectionClass="NSMutableArray" id="jOz-x7-EKZ"/>
+                        <outletCollection property="fishButtons" destination="6ky-Eo-Ytq" collectionClass="NSMutableArray" id="wh1-Sw-sy5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2K-K0-E8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="942"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="eMo-AQ-Z9r">
+            <objects>
+                <viewController id="X2b-9t-DRn" customClass="FirstViewController" customModule="Penguin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0hB-aO-NKT"/>
+                        <viewControllerLayoutGuide type="bottom" id="QcG-lu-J2V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7YY-rH-lAR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA1-yU-nge">
+                                <rect key="frame" x="249" y="528" width="71" height="40"/>
+                                <state key="normal" title="リセット"/>
+                                <connections>
+                                    <action selector="back" destination="X2b-9t-DRn" eventType="touchUpInside" id="3yG-Nv-AqK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19O-4F-q9z">
+                                <rect key="frame" x="110" y="14" width="165" height="47.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJa-l1-nyZ">
+                                <rect key="frame" x="203" y="14" width="72" height="47.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qec-rX-hym">
+                                <rect key="frame" x="235" y="79" width="65" height="44"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="Lf6-Uo-ew5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Op3-DF-HsR">
+                                <rect key="frame" x="122" y="465" width="76" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="スタート"/>
+                                <connections>
+                                    <action selector="startbutton" destination="X2b-9t-DRn" eventType="touchUpInside" id="Ar6-dR-Pf5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zE-6F-oCB">
+                                <rect key="frame" x="92" y="79" width="65" height="44"/>
+                                <color key="tintColor" red="0.16078431900000001" green="0.99215692280000001" blue="0.24313727020000001" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="tRf-8i-CMX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LX-ZG-6wx">
+                                <rect key="frame" x="165" y="131" width="65" height="44"/>
+                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="p8e-p0-46o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjJ-qZ-xAB">
+                                <rect key="frame" x="12" y="183" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="TOt-vi-JUQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Et-Uz-2NT">
+                                <rect key="frame" x="12" y="235" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="f1R-kW-U24"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYM-Gp-0G6">
+                                <rect key="frame" x="12" y="287" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="rL1-PE-fJu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCE-Uz-1ti">
+                                <rect key="frame" x="92" y="287" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="L9b-2O-zEg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x1-cF-Qe9">
+                                <rect key="frame" x="165" y="287" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="OFf-9C-rE8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRY-ps-BWQ">
+                                <rect key="frame" x="235" y="287" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="ep8-71-KMm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMj-UU-Urw">
+                                <rect key="frame" x="92" y="339" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="f7b-ct-U2f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwd-Ce-VhT">
+                                <rect key="frame" x="92" y="391" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="jrv-LR-6wW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvm-Cp-sGz">
+                                <rect key="frame" x="165" y="339" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="DUv-hR-gkH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yw7-L6-Cte">
+                                <rect key="frame" x="165" y="391" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="KeX-3k-Txv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRb-vY-W3W">
+                                <rect key="frame" x="235" y="339" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="smB-Pf-2Dx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dol-Fs-IVv">
+                                <rect key="frame" x="235" y="391" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="NNY-ke-IZu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMP-oY-ZVt">
+                                <rect key="frame" x="12" y="339" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="kRh-VR-cwN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed5-p9-CYB">
+                                <rect key="frame" x="12" y="391" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="5nf-GS-gh4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZI-RR-mg2">
+                                <rect key="frame" x="92" y="235" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="ttW-r7-bHQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNo-er-UA0">
+                                <rect key="frame" x="165" y="235" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="Q1G-Ny-SX5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muR-Uv-mia">
+                                <rect key="frame" x="235" y="235" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="jDC-sL-qe6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh7-uB-DyU">
+                                <rect key="frame" x="165" y="183" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="rXs-0R-Hr6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21W-wt-gCb">
+                                <rect key="frame" x="235" y="183" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="LpN-En-Tkt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYP-4k-P2R">
+                                <rect key="frame" x="13" y="5" width="89" height="66"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obg-IP-qsW">
+                                <rect key="frame" x="12" y="131" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="6Xe-5t-hZv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31U-rp-65c">
+                                <rect key="frame" x="235" y="131" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="gdg-4F-f4e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W31-bw-tsE">
+                                <rect key="frame" x="12" y="79" width="65" height="44"/>
+                                <color key="tintColor" red="0.98823535439999999" green="0.22352942819999999" blue="0.11372549830000001" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="YSZ-xD-6EU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJg-rz-bfC">
+                                <rect key="frame" x="92" y="131" width="65" height="44"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="mzC-Nl-922"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4u-Hd-A2e">
+                                <rect key="frame" x="92" y="183" width="65" height="44"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="ful-yN-Dps"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KM-Qj-Qj3">
+                                <rect key="frame" x="165" y="79" width="65" height="44"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="氷の穴.png"/>
+                                <connections>
+                                    <action selector="fishbutton:" destination="X2b-9t-DRn" eventType="touchUpInside" id="UUc-df-ckk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="countdownlabel" destination="VYP-4k-P2R" id="1JE-Bd-yw5"/>
+                        <outlet property="kaisuulabel" destination="19O-4F-q9z" id="w6p-j7-pUA"/>
+                        <outletCollection property="fishButtons" destination="W31-bw-tsE" collectionClass="NSMutableArray" id="35J-vb-MG9"/>
+                        <outletCollection property="fishButtons" destination="4zE-6F-oCB" collectionClass="NSMutableArray" id="2WW-43-ipc"/>
+                        <outletCollection property="fishButtons" destination="1KM-Qj-Qj3" collectionClass="NSMutableArray" id="kNw-Y1-0Vr"/>
+                        <outletCollection property="fishButtons" destination="Qec-rX-hym" collectionClass="NSMutableArray" id="8SA-At-x5j"/>
+                        <outletCollection property="fishButtons" destination="Obg-IP-qsW" collectionClass="NSMutableArray" id="TVe-9V-GRw"/>
+                        <outletCollection property="fishButtons" destination="TJg-rz-bfC" collectionClass="NSMutableArray" id="v0C-pn-ZRc"/>
+                        <outletCollection property="fishButtons" destination="4LX-ZG-6wx" collectionClass="NSMutableArray" id="A3B-w8-gDj"/>
+                        <outletCollection property="fishButtons" destination="31U-rp-65c" collectionClass="NSMutableArray" id="HMf-oM-EwC"/>
+                        <outletCollection property="fishButtons" destination="RjJ-qZ-xAB" collectionClass="NSMutableArray" id="c0R-la-ZTH"/>
+                        <outletCollection property="fishButtons" destination="T4u-Hd-A2e" collectionClass="NSMutableArray" id="VoO-pr-mYA"/>
+                        <outletCollection property="fishButtons" destination="gh7-uB-DyU" collectionClass="NSMutableArray" id="63f-Gt-QTr"/>
+                        <outletCollection property="fishButtons" destination="21W-wt-gCb" collectionClass="NSMutableArray" id="8bV-F6-LQs"/>
+                        <outletCollection property="fishButtons" destination="4Et-Uz-2NT" collectionClass="NSMutableArray" id="Jqm-FW-Noe"/>
+                        <outletCollection property="fishButtons" destination="XZI-RR-mg2" collectionClass="NSMutableArray" id="lth-yA-Q7V"/>
+                        <outletCollection property="fishButtons" destination="YNo-er-UA0" collectionClass="NSMutableArray" id="FSE-xu-Tze"/>
+                        <outletCollection property="fishButtons" destination="muR-Uv-mia" collectionClass="NSMutableArray" id="w4X-10-i3E"/>
+                        <outletCollection property="fishButtons" destination="pYM-Gp-0G6" collectionClass="NSMutableArray" id="Yxl-sC-jsn"/>
+                        <outletCollection property="fishButtons" destination="dCE-Uz-1ti" collectionClass="NSMutableArray" id="iZX-FR-Qqy"/>
+                        <outletCollection property="fishButtons" destination="4x1-cF-Qe9" collectionClass="NSMutableArray" id="5Bi-el-sV1"/>
+                        <outletCollection property="fishButtons" destination="DRY-ps-BWQ" collectionClass="NSMutableArray" id="El8-Z0-kNc"/>
+                        <outletCollection property="fishButtons" destination="OMP-oY-ZVt" collectionClass="NSMutableArray" id="VBp-8Z-z6y"/>
+                        <outletCollection property="fishButtons" destination="OMj-UU-Urw" collectionClass="NSMutableArray" id="gvz-ug-O62"/>
+                        <outletCollection property="fishButtons" destination="Gvm-Cp-sGz" collectionClass="NSMutableArray" id="4ZJ-rO-jUf"/>
+                        <outletCollection property="fishButtons" destination="GRb-vY-W3W" collectionClass="NSMutableArray" id="Z75-dE-VVX"/>
+                        <outletCollection property="fishButtons" destination="ed5-p9-CYB" collectionClass="NSMutableArray" id="hDR-KH-wah"/>
+                        <outletCollection property="fishButtons" destination="Zwd-Ce-VhT" collectionClass="NSMutableArray" id="QT8-6y-cun"/>
+                        <outletCollection property="fishButtons" destination="yw7-L6-Cte" collectionClass="NSMutableArray" id="4x9-or-pTR"/>
+                        <outletCollection property="fishButtons" destination="Dol-Fs-IVv" collectionClass="NSMutableArray" id="Q5J-oy-DlC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjq-hF-1T7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="-426"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="スタート画面.png" width="640" height="1136"/>
+        <image name="氷の穴.png" width="182" height="124"/>
+        <image name="神画面.png" width="640" height="1136"/>
+    </resources>
+</document>
