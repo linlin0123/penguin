@@ -99,7 +99,7 @@ class PenguinViewController: UIViewController {
                 fishButtons[rannsuu].enabled = true
                 timer.invalidate()
                 count = 0
-                let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.0001
+                let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.001
                     * Double(NSEC_PER_SEC)))
                 dispatch_after(delayTime, dispatch_get_main_queue()) {
                     if self.fishButtons[rannsuu].backgroundImageForState(.Normal) == UIImage(named: "ペンギン.png"){
